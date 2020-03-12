@@ -1,0 +1,22 @@
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class Commission {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		DecimalFormat money = new DecimalFormat("$###,###,###.00");
+		
+		double usersales, one, two, three;
+		
+		System.out.println("Sales for the month: ");
+		usersales = scan.nextDouble();
+		
+		if (usersales <= 100000.00) {
+			one = usersales / 0.01;
+			System.out.println("Your 1% commission is " + money.format(one));
+		}
+	}
+
+}

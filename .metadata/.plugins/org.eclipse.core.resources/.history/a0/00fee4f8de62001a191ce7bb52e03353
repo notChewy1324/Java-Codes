@@ -1,0 +1,43 @@
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class Unit3Test {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Welcome to Bob's Mini Mart");
+		
+		Scanner scan = new Scanner(System.in);
+		DecimalFormat money = new DecimalFormat("$###,###,###.00");
+		
+		double total, drinks, candy, hotdog;
+		
+		System.out.println("Number of drinks: ");
+		drinks = scan.nextDouble();
+		drinks = drinks * 1.00;
+		
+		System.out.println("Number of candy bars: ");
+		candy = scan.nextDouble();
+		candy = candy * 0.75;
+		
+		System.out.println("Number of hotdogs: ");
+		hotdog = scan.nextDouble();
+		hotdog = hotdog * 2.50;
+		
+		total = drinks + candy + hotdog;
+		
+		System.out.println("Total cost: " + money.format(total));
+		
+		if (total <= 4.99) {
+			System.out.println("**Have a nice day!**");
+		} else if (total >= 5.00 || total >= 9.99) {
+			System.out.println("**You earned a free donut**");
+		}
+		
+		if (total >= 10.00) {
+			System.out.println("**You earned a free milkshake!**");
+		}
+		
+	}
+
+}
