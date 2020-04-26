@@ -8,7 +8,7 @@ public class Commission {
 		Scanner scan = new Scanner(System.in);
 		DecimalFormat money = new DecimalFormat("$###,###,###.00");
 		
-		double usersales, one, two, three, sum;
+		double usersales, one, two, three;
 		
 		System.out.println("Sales for the month: ");
 		usersales = scan.nextDouble();
