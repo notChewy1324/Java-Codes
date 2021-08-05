@@ -15,20 +15,16 @@ public class eSlang {
 		
 		if (slang.equalsIgnoreCase("LOL")) {
 			System.out.println("LOL = Laughing Out Loud");
-		} else {
-			if (slang.equalsIgnoreCase("IDK")) {
+		} else if (slang.equalsIgnoreCase("IDK")) {
 				System.out.println("IDK = I Don't Know");
-			} else {
-				if (slang.equalsIgnoreCase("IDC")) {
+			} else if (slang.equalsIgnoreCase("IDC")) {
 					System.out.println("IDC = I Don't Care");
-				} else {
-					if (slang.equalsIgnoreCase("OMG")) {
+				} else if (slang.equalsIgnoreCase("OMG")) {
 						System.out.println("OMG = O My Gosh");
-				} else {
-					if (slang.equalsIgnoreCase("JK")) {
-						System.out.println("JK = Just Kiddin");
-					} else {
-						System.out.println("Sorry, don’t know that one.");
+					} else if (slang.equalsIgnoreCase("JK")) {
+							System.out.println("JK = Just Kiddin");
+						} else {
+							System.out.println("Sorry, donï¿½t know that one.");
 						}
 					}
 				}
